@@ -1,0 +1,24 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @garden.banner_url %>);">
+  <div class="container">
+    <h1><%= @garden.name %></h1>
+    <p>Right over there!</p>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <% @plants.each do |plant| %>
+     <div class="col">
+      <%= render "plant", plant: plant %>
+     </div>
+    <% end %>
+  </div>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col">
+      <h4 class="text-center">Add a plant:</h4>
+      <%= render "plant_form" %>
+    </div>
+  </div>
+</div>
+
