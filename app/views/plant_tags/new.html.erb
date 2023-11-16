@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Add a new tag for the plant!</h1>
+      <%= simple_form_for [@plant,@plant_tag] do |f| %>
+        <%= f.association :tag, include_blank: false, include_hidden: false, input_html: {multiple: true, class: "multiple-select"} %>
+        <%= f.submit "Tag", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

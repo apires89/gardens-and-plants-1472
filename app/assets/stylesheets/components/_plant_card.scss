@@ -20,9 +20,34 @@
   }
 }
 
+.plus-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
 .icon-card {
   position: absolute;
     top: 0;
     right: 0;
     padding: 5px;
+}
+
+.card-tags {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 80%;
+
+  span {
+    background: $blue;
+    font-size: .7em;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  a {
+    color: white;
+  }
 }
